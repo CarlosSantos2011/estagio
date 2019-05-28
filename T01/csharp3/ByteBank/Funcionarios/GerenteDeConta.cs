@@ -14,6 +14,29 @@ namespace ByteBank.Funcionarios
 
         }
 
+        public string Senha { get; set; }
+
+
+        public bool Logar(GerenteDeConta  funcionario, string senha)
+        {
+            bool usuarioAutenticado = funcionario.Autenticar(senha);
+
+            if (usuarioAutenticado)
+            {
+                Console.WriteLine("Bem vindo ao sistema");
+            }
+            else
+            {
+                Console.WriteLine("senha Incorreta");
+            }
+        }
+
+
+        public bool Autenticar(string senha)
+        {
+            return this.Senha == senha;
+        }
+
         public override void AumentarSalario()
         {
             Salario *= 1.05;
