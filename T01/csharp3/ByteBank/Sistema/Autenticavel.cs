@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ByteBank.Sistema
 {
-    public interface Autenticavel 
+    public interface IAutenticavel 
     {
         bool Autenticar(string senha);
     }

@@ -10,7 +10,7 @@ namespace ByteBank.Funcionarios
 {
 
 
-    public class Diretor : Autenticavel, Funcionario 
+    public class Diretor : FuncionarioAutenticavel 
     {
        
     
@@ -18,6 +18,7 @@ namespace ByteBank.Funcionarios
         {
             Console.WriteLine("Criando Diretor");
         }
+       
        
      
         public override void AumentarSalario()
