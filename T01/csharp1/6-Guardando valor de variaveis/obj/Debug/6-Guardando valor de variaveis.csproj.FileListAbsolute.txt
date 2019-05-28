@@ -1,0 +1,7 @@
+C:\Users\stag005\source\repos\AprendendoCSharp\6-Guardando valor de variaveis\bin\Debug\6-Guardando valor de variaveis.exe.config
+C:\Users\stag005\source\repos\AprendendoCSharp\6-Guardando valor de variaveis\bin\Debug\6-Guardando valor de variaveis.exe
+C:\Users\stag005\source\repos\AprendendoCSharp\6-Guardando valor de variaveis\bin\Debug\6-Guardando valor de variaveis.pdb
+C:\Users\stag005\source\repos\AprendendoCSharp\6-Guardando valor de variaveis\obj\Debug\6-Guardando valor de variaveis.csprojAssemblyReference.cache
+C:\Users\stag005\source\repos\AprendendoCSharp\6-Guardando valor de variaveis\obj\Debug\6-Guardando valor de variaveis.csproj.CoreCompileInputs.cache
+C:\Users\stag005\source\repos\AprendendoCSharp\6-Guardando valor de variaveis\obj\Debug\6-Guardando valor de variaveis.exe
+C:\Users\stag005\source\repos\AprendendoCSharp\6-Guardando valor de variaveis\obj\Debug\6-Guardando valor de variaveis.pdb

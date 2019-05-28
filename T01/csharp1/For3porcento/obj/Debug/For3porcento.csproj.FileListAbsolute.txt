@@ -1,0 +1,6 @@
+C:\Users\Game Room\source\repos\LacoDeRepeticaoWhile\For3porcento\bin\Debug\For3porcento.exe.config
+C:\Users\Game Room\source\repos\LacoDeRepeticaoWhile\For3porcento\bin\Debug\For3porcento.exe
+C:\Users\Game Room\source\repos\LacoDeRepeticaoWhile\For3porcento\bin\Debug\For3porcento.pdb
+C:\Users\Game Room\source\repos\LacoDeRepeticaoWhile\For3porcento\obj\Debug\For3porcento.csproj.CoreCompileInputs.cache
+C:\Users\Game Room\source\repos\LacoDeRepeticaoWhile\For3porcento\obj\Debug\For3porcento.exe
+C:\Users\Game Room\source\repos\LacoDeRepeticaoWhile\For3porcento\obj\Debug\For3porcento.pdb

@@ -1,0 +1,6 @@
+C:\Users\Game Room\source\repos\LacoDeRepeticaoWhile\fatorial\bin\Debug\fatorial.exe.config
+C:\Users\Game Room\source\repos\LacoDeRepeticaoWhile\fatorial\bin\Debug\fatorial.exe
+C:\Users\Game Room\source\repos\LacoDeRepeticaoWhile\fatorial\bin\Debug\fatorial.pdb
+C:\Users\Game Room\source\repos\LacoDeRepeticaoWhile\fatorial\obj\Debug\fatorial.csproj.CoreCompileInputs.cache
+C:\Users\Game Room\source\repos\LacoDeRepeticaoWhile\fatorial\obj\Debug\fatorial.exe
+C:\Users\Game Room\source\repos\LacoDeRepeticaoWhile\fatorial\obj\Debug\fatorial.pdb

@@ -1,0 +1,7 @@
+C:\Users\stag005\source\repos\AprendendoCSharp\1-Primeiro Projeto\bin\Debug\1-Primeiro Projeto.exe.config
+C:\Users\stag005\source\repos\AprendendoCSharp\1-Primeiro Projeto\bin\Debug\1-Primeiro Projeto.exe
+C:\Users\stag005\source\repos\AprendendoCSharp\1-Primeiro Projeto\bin\Debug\1-Primeiro Projeto.pdb
+C:\Users\stag005\source\repos\AprendendoCSharp\1-Primeiro Projeto\obj\Debug\1-Primeiro Projeto.csprojAssemblyReference.cache
+C:\Users\stag005\source\repos\AprendendoCSharp\1-Primeiro Projeto\obj\Debug\1-Primeiro Projeto.csproj.CoreCompileInputs.cache
+C:\Users\stag005\source\repos\AprendendoCSharp\1-Primeiro Projeto\obj\Debug\1-Primeiro Projeto.exe
+C:\Users\stag005\source\repos\AprendendoCSharp\1-Primeiro Projeto\obj\Debug\1-Primeiro Projeto.pdb

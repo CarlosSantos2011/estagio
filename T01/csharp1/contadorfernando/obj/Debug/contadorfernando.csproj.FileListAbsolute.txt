@@ -1,0 +1,6 @@
+C:\Users\stag005\source\repos\AprendendoCSharp\contadorfernando\bin\Debug\contadorfernando.exe.config
+C:\Users\stag005\source\repos\AprendendoCSharp\contadorfernando\bin\Debug\contadorfernando.exe
+C:\Users\stag005\source\repos\AprendendoCSharp\contadorfernando\bin\Debug\contadorfernando.pdb
+C:\Users\stag005\source\repos\AprendendoCSharp\contadorfernando\obj\Debug\contadorfernando.csproj.CoreCompileInputs.cache
+C:\Users\stag005\source\repos\AprendendoCSharp\contadorfernando\obj\Debug\contadorfernando.exe
+C:\Users\stag005\source\repos\AprendendoCSharp\contadorfernando\obj\Debug\contadorfernando.pdb

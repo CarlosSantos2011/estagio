@@ -1,0 +1,6 @@
+C:\Users\stag005\source\repos\AprendendoCSharp\3-Criando Variaveis flutuantes\bin\Debug\3-Criando Variaveis flutuantes.exe.config
+C:\Users\stag005\source\repos\AprendendoCSharp\3-Criando Variaveis flutuantes\bin\Debug\3-Criando Variaveis flutuantes.exe
+C:\Users\stag005\source\repos\AprendendoCSharp\3-Criando Variaveis flutuantes\bin\Debug\3-Criando Variaveis flutuantes.pdb
+C:\Users\stag005\source\repos\AprendendoCSharp\3-Criando Variaveis flutuantes\obj\Debug\3-Criando Variaveis flutuantes.csproj.CoreCompileInputs.cache
+C:\Users\stag005\source\repos\AprendendoCSharp\3-Criando Variaveis flutuantes\obj\Debug\3-Criando Variaveis flutuantes.exe
+C:\Users\stag005\source\repos\AprendendoCSharp\3-Criando Variaveis flutuantes\obj\Debug\3-Criando Variaveis flutuantes.pdb

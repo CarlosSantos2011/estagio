@@ -1,0 +1,6 @@
+C:\Users\Game Room\source\repos\LacoDeRepeticaoWhile\LacoDeRepeticaoFor2\bin\Debug\LacoDeRepeticaoFor2.exe.config
+C:\Users\Game Room\source\repos\LacoDeRepeticaoWhile\LacoDeRepeticaoFor2\bin\Debug\LacoDeRepeticaoFor2.exe
+C:\Users\Game Room\source\repos\LacoDeRepeticaoWhile\LacoDeRepeticaoFor2\bin\Debug\LacoDeRepeticaoFor2.pdb
+C:\Users\Game Room\source\repos\LacoDeRepeticaoWhile\LacoDeRepeticaoFor2\obj\Debug\LacoDeRepeticaoFor2.csproj.CoreCompileInputs.cache
+C:\Users\Game Room\source\repos\LacoDeRepeticaoWhile\LacoDeRepeticaoFor2\obj\Debug\LacoDeRepeticaoFor2.exe
+C:\Users\Game Room\source\repos\LacoDeRepeticaoWhile\LacoDeRepeticaoFor2\obj\Debug\LacoDeRepeticaoFor2.pdb

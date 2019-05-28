@@ -1,0 +1,7 @@
+C:\Users\stag005\source\repos\AprendendoCSharp\12- PoupancaLongo\bin\Debug\12- PoupancaLongo.exe.config
+C:\Users\stag005\source\repos\AprendendoCSharp\12- PoupancaLongo\bin\Debug\12- PoupancaLongo.exe
+C:\Users\stag005\source\repos\AprendendoCSharp\12- PoupancaLongo\bin\Debug\12- PoupancaLongo.pdb
+C:\Users\stag005\source\repos\AprendendoCSharp\12- PoupancaLongo\obj\Debug\12- PoupancaLongo.csprojAssemblyReference.cache
+C:\Users\stag005\source\repos\AprendendoCSharp\12- PoupancaLongo\obj\Debug\12- PoupancaLongo.csproj.CoreCompileInputs.cache
+C:\Users\stag005\source\repos\AprendendoCSharp\12- PoupancaLongo\obj\Debug\12- PoupancaLongo.exe
+C:\Users\stag005\source\repos\AprendendoCSharp\12- PoupancaLongo\obj\Debug\12- PoupancaLongo.pdb

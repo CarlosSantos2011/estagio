@@ -1,0 +1,6 @@
+C:\Users\stag005\source\repos\AprendendoCSharp\Conversação e outros tipos numericos\bin\Debug\Conversação e outros tipos numericos.exe.config
+C:\Users\stag005\source\repos\AprendendoCSharp\Conversação e outros tipos numericos\bin\Debug\Conversação e outros tipos numericos.exe
+C:\Users\stag005\source\repos\AprendendoCSharp\Conversação e outros tipos numericos\bin\Debug\Conversação e outros tipos numericos.pdb
+C:\Users\stag005\source\repos\AprendendoCSharp\Conversação e outros tipos numericos\obj\Debug\4-Conversação e outros tipos numericos.csproj.CoreCompileInputs.cache
+C:\Users\stag005\source\repos\AprendendoCSharp\Conversação e outros tipos numericos\obj\Debug\Conversação e outros tipos numericos.exe
+C:\Users\stag005\source\repos\AprendendoCSharp\Conversação e outros tipos numericos\obj\Debug\Conversação e outros tipos numericos.pdb
