@@ -25,15 +25,11 @@ namespace ByteBank.Funcionarios
 
         }
 
-        public virtual void AumentarSalario()
-        {
-            Salario = Salario + (Salario * 0.1);
-        }
+        public abstract void AumentarSalario();
 
+
+
+        public abstract double GetBonificacao();
        
-        public virtual double GetBonificacao()
-        {
-            return Salario * 0.10;
-        }
     }
 }

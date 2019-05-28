@@ -35,6 +35,9 @@ namespace ByteBank
             GerenteDeConta camila = new GerenteDeConta("326.985.628-89");
             camila.Nome = "Camila";
 
+            Desenvolvedor guilherme = new Desenvolvedor("456.259.467-89");
+            guilherme.Nome = "Guilherme";
+
             gerenciadorBonificacao.Registrar(pedro);
             gerenciadorBonificacao.Registrar(roberta);
             gerenciadorBonificacao.Registrar(igor);
