@@ -16,7 +16,7 @@ namespace ByteBank
 
             UsarSistema();
 
-            Console.ReadLine(); a
+            Console.ReadLine(); 
             
         }
 
@@ -28,12 +28,15 @@ namespace ByteBank
             roberta.Nome = "Roberta";
             roberta.Senha = "123";
 
-            sistemaInterno.Logar(roberta, "123");
-            sistemaInterno.Logar(camila, "abc");
-
             GerenteDeConta camila = new GerenteDeConta("326.985.628-89");
             camila.Nome = "Camila";
             camila.Senha = "abc";
+
+            
+            sistemaInterno.Logar(roberta, "123");
+            sistemaInterno.Logar(camila, "abc");
+
+            Console.WriteLine();
 
         }
         public static void CalcularBonificacao()
