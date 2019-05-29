@@ -14,26 +14,11 @@ namespace ByteBank
 
         public Cliente Titular { get; set; }
 
-        public int Numero { get; set; }
-
-        private int _agencia;
+         
+        public int Numero { get; }
         public int Agencia
-        {
-            get
-            {
-                return _agencia;
-            }
-            set
-            {
-                if (value <= 0)
-                {
-                    return;
-                }
-
-                _agencia = value;
-            }
-        }
-
+        { get; }
+            
         private double _saldo = 100;
         public double Saldo
         {

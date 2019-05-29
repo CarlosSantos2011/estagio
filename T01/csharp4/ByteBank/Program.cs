@@ -11,6 +11,12 @@ namespace ByteBank
         static void Main(string[] args)
 
         {
+            ContaCorrente conta = new ContaCorrente(456, 54864);
+            conta.Agencia = 455;
+
+
+            
+
             try
             {
                 Metodo();
