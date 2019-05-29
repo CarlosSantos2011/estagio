@@ -9,46 +9,26 @@ namespace ByteBank
     class Program
     {
         static void Main(string[] args)
-
         {
             try
             {
-                ContaCorrente conta = new ContaCorrente(65, 5);
+                ContaCorrente conta = new ContaCorrente(0, 0);
             }
-            catch(ArgumentException ex)
+            catch (ArgumentException ex)
             {
-              Console.WriteLine("Ocorreu uma exceção do tipo Argument");
-
-                Console.WriteLine(ex.Message);
-
-            }
-            catch (Exception ex )
-            {
+                
+                Console.WriteLine("Argumento com problema: " + ex.ParamName);
+                Console.WriteLine("Ocorreu uma exceção do tipo ArgumentException.");
                 Console.WriteLine(ex.Message);
             }
-            
-
-
-            
-
-            try
+            catch (Exception ex)
             {
-                Metodo();
-            }
-            catch (DivideByZeroException e )
-            {
-                Console.WriteLine("Não é possível dividir por zero");
-            }           
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-                Console.WriteLine(e.StackTrace);
-                Console.WriteLine("Aconteceu um erro!");
+                Console.WriteLine(ex.Message);
             }
 
+            Metodo();
 
-
-
+            Console.WriteLine("Execução finalizada. Tecle enter para sair.");
             Console.ReadLine();
         }
 
@@ -78,7 +58,7 @@ namespace ByteBank
             catch (DivideByZeroException)
             {
                 Console.WriteLine("Exceção com numero=" + numero + " e divisor = " + divisor);
-                throw;
+                return 0;
                 
 
 
