@@ -5,3 +5,10 @@ C:\Users\stag005\estagiogithub\estagio\T01\csharp4\ByteBank\obj\Debug\ByteBank.c
 C:\Users\stag005\estagiogithub\estagio\T01\csharp4\ByteBank\obj\Debug\ByteBank.csproj.CoreCompileInputs.cache
 C:\Users\stag005\estagiogithub\estagio\T01\csharp4\ByteBank\obj\Debug\ByteBank.exe
 C:\Users\stag005\estagiogithub\estagio\T01\csharp4\ByteBank\obj\Debug\ByteBank.pdb
+C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T01\csharp4\ByteBank\bin\Debug\ByteBank.exe.config
+C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T01\csharp4\ByteBank\bin\Debug\ByteBank.exe
+C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T01\csharp4\ByteBank\bin\Debug\ByteBank.pdb
+C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T01\csharp4\ByteBank\obj\Debug\ByteBank.csprojAssemblyReference.cache
+C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T01\csharp4\ByteBank\obj\Debug\ByteBank.csproj.CoreCompileInputs.cache
+C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T01\csharp4\ByteBank\obj\Debug\ByteBank.exe
+C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T01\csharp4\ByteBank\obj\Debug\ByteBank.pdb
