@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ByteBank
 {
@@ -6,75 +10,45 @@ namespace ByteBank
     {
         static void Main(string[] args)
         {
-            int resultado = Metodo();
-
-            if (resultado == -2)
+            try
             {
-                Console.WriteLine("Ocorreu um erro");
+                Metodo();
             }
-
+            catch(NullReferenceException erro)
+            {
+                Console.WriteLine(erro.StackTrace);
+                Console.WriteLine("Aconteceu um erro!");
+            }
+            
             Console.ReadLine();
         }
-        //Teste com a cadeia de chamada:
-        //Metodo -> TestaDivisao -> Dividir
-        private static int Metodo()
+
+        // Teste com a cadeia de chamada:
+        // Metodo -> TestaDivisao -> Dividir
+        private static void Metodo()
         {
-            int resultadoDivisao = TestaDivisao(0);
-
-            if (resultadoDivisao  == -2)
-            {
-                return -2;
-            }
-
-
-           int resultado2 = TestaDivisao(20);
-
-            if (resultado2 == -2)
-            {
-                return -2
-            }
-
-            return 0;
+            TestaDivisao(0);
         }
 
-        private static int TestaDivisao(int divisor)
+        private static void TestaDivisao(int divisor)
         {
-            int resultado = Dividir(10, divisor);
-
-            if (resultado == -2)
+            try
             {
-                return -2;
-            }         
-
-
-
-            if (resultado == -1)
-            {
-                Console.WriteLine("Não é possivel fazer divisão por 0");
-
-            }
-            else
-            {
+                int resultado = Dividir(10, divisor);
                 Console.WriteLine("Resultado da divisão de 10 por " + divisor + " é " + resultado);
-
             }
-
-            return 0;
-            // Numero = 10
-            // Divisor = 20
+            catch(DivideByZeroException erro)
+            {
+                Console.WriteLine(erro.Message);
+                Console.WriteLine(erro.StackTrace);
+                Console.WriteLine("Não é possível fazer uma divisão por 0!");
+            }
         }
 
         private static int Dividir(int numero, int divisor)
         {
-            if(divisor == 0)
-            {
-                return -1; 
-
-            }
-            if (divisor > numero)
-            {
-                return -1;
-            }
+            ContaCorrente conta = null;
+            Console.WriteLine(conta.Saldo);
 
             return numero / divisor;
         }
