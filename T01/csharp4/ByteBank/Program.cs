@@ -24,8 +24,20 @@ namespace ByteBank
                 {
 
                 }
+                Console.WriteLine("argumento com problema:" + ex.ParamName);
+                Console.WriteLine("Ocorreu uma exceção do tipo ArgumentException");
+                Console.WriteLine(ex.Message);
+            }
+            catch (SaldoInsuficienteException ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("Exceção do tipo SaldoInsuficienteException");
             }
 
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             //Metodo();
 
             Console.WriteLine("Execução finalizada. Tecle enter para sair.");
