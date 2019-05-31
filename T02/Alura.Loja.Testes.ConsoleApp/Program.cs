@@ -8,6 +8,11 @@ namespace Alura.Loja.Testes.ConsoleApp
 {
     class Program
     {
+
+        
+
+
+
         static void Main(string[] args)
         {
             //GravarUsandoAdoNet();
@@ -27,12 +32,11 @@ namespace Alura.Loja.Testes.ConsoleApp
 
 
             //atualizar o produto
-            using (var repo = new LojaContext())
+            using (var repo = new ProdutoDAOEntity())
             {
-                Produto primeiro = repo.Produtos.First();
+                Produto primeiro = repo.Produtos().First();
                 primeiro.Nome = "Cassino Royale - Editado";
-                repo.Produtos.Update(primeiro);
-                repo.SaveChanges();
+                repo.Atualizar(primeiro);
 
             }
 
@@ -43,14 +47,14 @@ namespace Alura.Loja.Testes.ConsoleApp
 
         private static void ExcluirProdutos()
         {
-            using (var repo = new LojaContext())
+            using (var repo = new ProdutoDAOEntity())
             {
-                IList<Produto> produtos = repo.Produtos.ToList();
+                IList<Produto> produtos = repo.Produtos();
                 foreach (var item in produtos)
                 {
-                    repo.Produtos.Remove(item);
+                    repo.Remover(item);
                 }
-                repo.SaveChanges();
+               
             }
 
 
@@ -58,9 +62,9 @@ namespace Alura.Loja.Testes.ConsoleApp
 
         private static void RecuperarProdutos()
         {
-            using(var repo = new LojaContext())
+            using(var repo = new ProdutoDAOEntity())
             {
-                IList<Produto> produtos = repo.Produtos.ToList();
+                IList<Produto> produtos = repo.Produtos();
                 Console.WriteLine("Foram encontrados [0] produto(s). ", produtos.Count);
                 foreach (var item in produtos)
                 {
@@ -76,10 +80,10 @@ namespace Alura.Loja.Testes.ConsoleApp
             p.Categoria = "Filmes";
             p.Preco = 19.89;
 
-            using (var repo = new LojaContext())
+            using (var repo = new ProdutoDAOEntity())
             {
-                repo.Produtos.Add (p);
-                repo.SaveChanges();
+                repo.Adicionar(p);
+               
             }
         }
 
