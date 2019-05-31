@@ -12,8 +12,32 @@ namespace Alura.Loja.Testes.ConsoleApp
         {
             //GravarUsandoAdoNet();
             //GravarUsandoEntity();
+            //RecuperarProdutos();
+            //ExcluirProdutos();
+            //RecuperarProdutos();
+            AtualizarProduto();
+        }
+
+        private static void AtualizarProduto()
+        {
+            //incluir um produto
+            GravarUsandoEntity(); 
             RecuperarProdutos();
-           ExcluirProdutos();
+
+
+
+            //atualizar o produto
+            using (var repo = new LojaContext())
+            {
+                Produto primeiro = repo.Produtos.First();
+                primeiro.Nome = "Cassino Royale - Editado";
+                repo.Produtos.Update(primeiro);
+                repo.SaveChanges();
+
+            }
+
+
+
             RecuperarProdutos();
         }
 
@@ -48,8 +72,8 @@ namespace Alura.Loja.Testes.ConsoleApp
         private static void GravarUsandoEntity()
         {
             Produto p = new Produto();
-            p.Nome = "Harry Potter e a Ordem da Fênix";
-            p.Categoria = "Livros";
+            p.Nome = "Cassino Royale";
+            p.Categoria = "Filmes";
             p.Preco = 19.89;
 
             using (var repo = new LojaContext())
