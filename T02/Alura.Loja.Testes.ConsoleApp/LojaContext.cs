@@ -4,13 +4,16 @@ using System;
 namespace Alura.Loja.Testes.ConsoleApp
 {
     internal class LojaContext : DbContext
-    {
-        public DbSet<Produto> Produtos { get; set;}
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
+    {
+        public DbSet<Produto> Produtos { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionBuilder.
+            optionsBuilder.
                 UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=LojaDB;Trusted_Connection=true;");
+
+
 
         }
     }

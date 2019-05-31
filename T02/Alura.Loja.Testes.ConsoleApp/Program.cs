@@ -11,43 +11,51 @@ namespace Alura.Loja.Testes.ConsoleApp
         static void Main(string[] args)
         {
             //GravarUsandoAdoNet();
-            GravarUsandoEntity();
+            //GravarUsandoEntity();
+            RecuperarProdutos();
+           ExcluirProdutos();
+            RecuperarProdutos();
+        }
+
+        private static void ExcluirProdutos()
+        {
+            using (var repo = new LojaContext())
+            {
+                IList<Produto> produtos = repo.Produtos.ToList();
+                foreach (var item in produtos)
+                {
+                    repo.Produtos.Remove(item);
+                }
+                repo.SaveChanges();
+            }
+
+
+        }
+
+        private static void RecuperarProdutos()
+        {
+            using(var repo = new LojaContext())
+            {
+                IList<Produto> produtos = repo.Produtos.ToList();
+                Console.WriteLine("Foram encontrados [0] produto(s). ", produtos.Count);
+                foreach (var item in produtos)
+                {
+                    Console.WriteLine(item.Nome);
+                }
+            }
         }
 
         private static void GravarUsandoEntity()
         {
-            Produto p1 = new Produto();
+            Produto p = new Produto();
             p.Nome = "Harry Potter e a Ordem da Fênix";
             p.Categoria = "Livros";
             p.Preco = 19.89;
 
-
-            Produto p2 = new Produto();
-            p2.Nome = "Senhor dos Anéis 1";
-            p2.Categoria = "Livros";
-            p2.Preco = 19.89;
-
-            Produto p3 = new Produto();
-            p3.Nome = "O Monge e o Executivo";
-            p3.Categoria = "Livros";
-            p3.Preco = 19.89;
-
-            Produto p4 = new Produto();
-            p4.Nome = "O Codigo da Vinci ";
-            p4.Categoria = "Livros";
-            p4.Preco = 20.00;
-
-
-
-
-
-            using (var contexto = new LojaContext())
+            using (var repo = new LojaContext())
             {
-                contexto.Produtos.Add(p1);
-                contexto.Produtos.Add(p2);
-                contexto.Produtos.Add(p3);
-                contexto.Produtos.Add(p4);
-                contexto.SaveChanges();
+                repo.Produtos.Add (p);
+                repo.SaveChanges();
             }
         }
 
