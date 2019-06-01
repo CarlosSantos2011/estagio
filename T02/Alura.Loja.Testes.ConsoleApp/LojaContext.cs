@@ -16,5 +16,10 @@ namespace Alura.Loja.Testes.ConsoleApp
 
 
         }
+
+        internal object GetInfrasctructure<T>()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
