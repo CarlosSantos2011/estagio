@@ -11,6 +11,15 @@ namespace Alura.Loja.Testes.ConsoleApp
     {
         static void Main(string[] args)
         {
+            var promocaoDePascoa = new Promoção();
+            promocaoDePascoa.Descrição = "Páscoa Feliz";
+            promocaoDePascoa.DataInicio = DateTime.Now;
+            promocaoDePascoa.DataTermino = DateTime.Now.AddMonths(3);
+            promocaoDePascoa.Produtos.Add(new Produto());
+            promocaoDePascoa.Produtos.Add(new Produto());
+            promocaoDePascoa.Produtos.Add(new Produto());
+
+
             //compra de 6 pães
 
             var paoFrances = new Produto();
@@ -30,14 +39,10 @@ namespace Alura.Loja.Testes.ConsoleApp
             {
                 
 
-             contexto.Compras.Add(compra);
-
-                ExibeEntries(contexto.ChangeTracker.Entries());
-
-              contexto.SaveChanges();
+            
             }
 
-          void ExibeEntries(IEnumerable<EntityEntry > entries)
+          void ExibeEntries(IList<EntityEntry > entries)
             {
                 foreach (var e in entries)
                 {
