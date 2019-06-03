@@ -1,0 +1,19 @@
+﻿
+
+using System.Collections.Generic;
+
+namespace Alura.Loja.Testes.ConsoleApp
+{
+    public class PromocaoProduto
+    {
+        public int ProdutoId { get; set; }
+        public Produto Produto { get; set; }
+        public int PromocaoId { get; set; }
+
+        public IList<PromocaoProduto> Produtos { get; internal set; }
+    }
+}
+
+
+
+
