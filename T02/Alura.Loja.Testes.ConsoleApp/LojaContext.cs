@@ -10,8 +10,9 @@ namespace Alura.Loja.Testes.ConsoleApp
         public DbSet<Compra> Compras { get; set; }
         //public DbSet<Promoção> Promocoes { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
+        public object Promocoes { get; internal set; }
 
-       protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         
         {
             optionsBuilder.UseSqlServer("Server = (localdb)\\mssqllocaldb; Database = LojaDB; Trusted_Connection = true;");
