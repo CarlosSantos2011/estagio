@@ -13,7 +13,7 @@ namespace Alura.Loja.Testes.ConsoleApp
         public IList<PromocaoProduto> Promoções{ get; set; }
         
         public override string ToString()
-
+            a
         {
             return $"Produto:{this.Id}, {this.Nome}, {this.Categoria}, {this.PrecoUnitario} ";
 
