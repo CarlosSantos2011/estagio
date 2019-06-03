@@ -11,11 +11,11 @@ namespace Alura.Loja.Testes.ConsoleApp
         public DbSet<Promoção> Promocoes { get; set; }
 
 
-        protected override void OnConfiguring(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<PromocaoProduto>().HasKey(pp => new { pp.PromocaoId, pp.ProdutoId });
-            base.OnModelCreating(modelBuilder);
-        }
+        ////protected override void OnConfiguring(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<PromocaoProduto>().HasKey(pp => new { pp.PromocaoId, pp.ProdutoId });
+        //    base.OnModelCreating(modelBuilder);
+        //}
 
         protected  override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
