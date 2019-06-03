@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,51 +12,31 @@ namespace Alura.Loja.Testes.ConsoleApp
     {
         static void Main(string[] args)
         {
+            var p1 = new Produto() { Nome = "Suco de Laranja", Categoria = "Bebidas", PrecoUnitario = 8.79, Unidade = "Litros" };
+            var p2 = new Produto() { Nome = "Café", Categoria = "Bebidas", PrecoUnitario = 12.45, Unidade = "Gramas" };
+            var p3 = new Produto() { Nome = "Macarrão", Categoria = "Alimentos", PrecoUnitario = 4.23, Unidade = "Gramas" };
+
+            var promocaoDePascoa = new Promoção();
+            promocaoDePascoa.Descrição = "Páscoa Feliz";
+            promocaoDePascoa.DataInicio = DateTime.Now;
+            promocaoDePascoa.DataTermino = DateTime.Now.AddMonths(3);
+
+            promocaoDePascoa.IncluiProduto(p1);
+            promocaoDePascoa.IncluiProduto(p2);
+            promocaoDePascoa.IncluiProduto(p3);
+
             using (var contexto = new LojaContext())
             {
+                var serviceProvider = contexto.GetInfrastructure<IServiceProvider>();
+                var loggerFactory = serviceProvider.GetService<ILoggerFactory>();
+                loggerFactory.AddProvider(SqlLoggerProvider.Create());
 
-                var produtos = contexto.Produtos.ToList();
-
-                foreach (var p in produtos)
-                {
-                    Console.WriteLine(p);
-                }
-                foreach (var e in contexto.ChangeTracker.Entries())
-                {
-                    Console.WriteLine(e.Entity.ToString() + " - " + e.State);
-                }
+                //contexto.Promocoes.Add(promocaoDePascoa);
+                var promocao = contexto.Promocoes.Find(3);
+                contexto.Promocoes.Remove(promocao);
+                contexto.SaveChanges();
 
 
-                var novoProduto = new Produto()
-                {
-                    Nome = "Desinfetante",
-                    Categoria = "limpeza",
-                    Preco = 2.99
-                };
-                contexto.Produtos.Add(novoProduto);
-
-                contexto.SaveChanges();           
-                
-                ExibeEntries(contexto);
             }
-        } 
-        
-        private static void ExibeEntries(Func<IEnumerable<EntityEntry>> entries)
-        {
-            throw new NotImplementedException();
         }
-        
-        private static void ExibeEntries(LojaContext contexto)
-        {
-          void ExibeEntries(IEnumerable<EntityEntry> entries)
-
-            {
-                foreach (var e in contexto.ChangeTracker.Entries())
-                {
-                    Console.WriteLine(e.Entity.ToString() + " - " + e.State);
-                }
-            }
-
-        }
-    }
 }
