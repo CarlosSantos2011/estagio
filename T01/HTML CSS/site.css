@@ -120,11 +120,17 @@ h2 {
 }
 aside,img{
     float: right;
-    width: 15%;
+   
+ border-bottom: 10px solid black;
+  
 }
 aside{
-    clear:right;
-    box-sizing:border-box;
+    width: 15%;
+	position: relative;
+	top: 310px;
+	
+
+
 }
 main{
     float:left;
@@ -132,5 +138,29 @@ main{
 }
 footer{
     clear: both;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     
+
+}
+cite{
+    font-style: italic;
+    float: right;
+}
+img, aside{
+    float: right;
+	box-sizing: border-box;
+	border-left: 10px solid black;
+	border-bottom: 10px solid black;
+    
+   }
+img{
+    position: absolute;
+    top: 0;
+    right: 0;
+        
+}
+main {
+    padding-bottom: 80px;
 }
