@@ -16,6 +16,7 @@ h1, h2 {
 	padding: 25px;
 	border-bottom: 10px solid black;
 	font-size: 60px;
+    text-transform: uppercase;
 }
 
 p {
@@ -29,6 +30,8 @@ blockquote {
 	width: 250px;
 	box-sizing: border-box;
 	margin: 20px 40px;
+    float: right;
+    padding: 16px;
 }
 
 aside {
@@ -43,6 +46,8 @@ footer {
 
 nav a {
 	color: #F2FFFC;
+    text-transform: lowercase;
+    
 }
 
 main a {
@@ -55,7 +60,7 @@ aside a {
 }
 
 blockquote, aside, footer {
-    padding: 20px;
+   
 }
 
 .biografia {
@@ -83,11 +88,49 @@ em {
 
 h2 {
 	font-size: 30px;
+    clear: both;
 }
 
 .icones-sociais li {
 	display: inline-block;
 }
-.social-rodape{
-    margin: 60px;
+.icones-sociais a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-indent: -99999px;
+}
+
+.github {
+    background-image: url(github.png);
+}
+
+.twitter {
+     background-image: url(twitter.png);
+}
+
+.linkedin {
+    background-image: url(linkedin.png);
+}
+.fiat{
+    float: right;
+}
+.petrobras{
+    float:left;
+}
+aside,img{
+    float: right;
+    width: 15%;
+}
+aside{
+    clear:right;
+    box-sizing:border-box;
+}
+main{
+    float:left;
+    width: 85%;
+}
+footer{
+    clear: both;
+    
 }
