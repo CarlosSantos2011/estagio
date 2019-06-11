@@ -4,30 +4,40 @@ h1{
 	color: #FFF;
 	padding: 20px;
 	border-bottom: 10px solid black;
+    font-family: "Cambria";
+
 	font-size: 40px;
     text-transform: uppercase;
     text-align: center;
+    margin:0;
     
 }
 body{
     
     color:black;
-    background-color:beige;
+    background-color:aliceblue;
     font-size: 20px;
     font-family: "Open Sans Condensed", "Script";
-    margin: 20px;
+    margin:0;
+    
+    
     
 }
 footer{
-   background-color: black;
+   background-color: aquamarine;
    width:100%;
-   padding: 10px;
-  
-   margin: -20px;
+   padding: 40px;
+   border-top: 10px solid black;
+   
 }
 nav{
     border: 10px, solid black;
     box-sizing: border-box;
+    padding:25px;
+    margin: 10px;
+ 
+    
+
 }
 p {
     text-align: justify;
@@ -37,5 +47,21 @@ div {
    
     padding: 20px;
 }
-main{
+main {
 }
+
+h2{
+    font-family: "Arial";
+}
+img{
+    position: relative;
+    top: ;
+    left: 0;
+    width: 15%;
+    border: 10px solid black;
+    float:left;
+    box-sizing: border-box;
+    margin:10px;
+    
+        
+    }
