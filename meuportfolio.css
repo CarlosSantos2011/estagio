@@ -1,53 +1,56 @@
 h1{
- 
-	background-color: darkblue;
+	background-color: darkgreen;
 	color: #FFF;
-	padding: 20px;
-	border-bottom: 10px solid black;
-    font-family: "Cambria";
-
+	padding: 30px;
+	border: 5px solid black;
+    font-family: "Open Sans Condensed", "Times New Roman", sans-serif;
 	font-size: 40px;
     text-transform: uppercase;
     text-align: center;
-    margin:0;
-    
+    margin:0px;
+    width:100%;
 }
 body{
     
     color:black;
     background-color:aliceblue;
     font-size: 20px;
-    font-family: "Open Sans Condensed", "Script";
-    margin:0;
-    
-    
-    
+    font-family: , cursive;
+    margin:0px;
+  
 }
 footer{
-   background-color: aquamarine;
+   background-color: darkcyan;
    width:100%;
-   padding: 40px;
+   padding:30px;
    border-top: 10px solid black;
-   
+   margin: 0px;
+  
+}
+li{
+    text-align: justify;
 }
 nav{
-    border: 10px, solid black;
-    box-sizing: border-box;
-    padding:25px;
-    margin: 10px;
- 
+    width:100%;
+    background-color: darkgrey;
+    padding:32.5px;
+    margin:0px; 
+    border-bottom: 5px solid black;
+     border-right: 5px solid black;
     
-
+    
 }
 p {
+   
     text-align: justify;
-    margin: 20px 0;
+    margin: 20px;
 }
 div {
-   
-    padding: 20px;
+      padding: 20px;
 }
-main {
+main {       
+        background-color: white;   
+        padding: 10px;
 }
 
 h2{
@@ -55,13 +58,13 @@ h2{
 }
 img{
     position: relative;
-    top: ;
+    top:0;
     left: 0;
-    width: 15%;
-    border: 10px solid black;
+    width: 20%;
+    border-left:5px solid black;
+    border-right:5px solid black;
+    border-bottom: 5px solid black;
     float:left;
     box-sizing: border-box;
-    margin:10px;
-    
-        
+    margin:0;     
     }
