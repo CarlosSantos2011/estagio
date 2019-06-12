@@ -10,10 +10,10 @@ namespace CaelumEstoque.Controllers
 {
     public class ProdutoController : Controller
     {
-
-        // GET: Produto
+        [Route("produtos", Name = "ListaProdutos")]
         public ActionResult Index()
-        {
+
+        {   
             ProdutosDAO dao = new ProdutosDAO();
             IList<Produto> produtos = dao.Lista();
            return View(produtos);
@@ -52,8 +52,8 @@ namespace CaelumEstoque.Controllers
                 return View("Form");
             }
         }
+        [Route("produtos/{id}", Name = "VisualizaProduto")]
         public ActionResult Visualiza(int id)
-       
         {
             ProdutosDAO dao = new ProdutosDAO();
             Produto produto = dao.BuscaPorId(id);
