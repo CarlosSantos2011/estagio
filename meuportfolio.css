@@ -1,7 +1,7 @@
 h1{
 	background-color: black;
 	color: #FFF;
-	padding: 30px;
+	padding: 31px;
 	border: 5px solid grey;
     font-family: "Open Sans Condensed", "Times New Roman", sans-serif;
 	font-size: 40px;
@@ -16,15 +16,15 @@ body{
     background-color:aliceblue;
     font-size: 20px;
     font-family: , cursive;
-    padding:0;
-    margin: 0;
-  
-   
-  
+    padding:0px;
+    margin: 0px;
 }
 footer{
    background-color: black;
    width:100%;
+
+   padding:32px;
+   border-top: 5px solid black;
    padding:35px;
    border-top: 5px solid grey;
    margin: 0px;
@@ -32,15 +32,18 @@ footer{
 }
 li{
     text-align: justify;
+    font-size:18px;
+ 
 }
 nav{
     width:100%;
     background-color: lightcyan;
-    padding:32.5px;
+    padding:33.3px;
     margin:0px; 
     border-bottom: 5px solid black;
     border-right: 5px solid black;
     border-top:5px solid black;
+   
     
     
 }
@@ -49,18 +52,17 @@ p {
    
     text-align: justify;
      margin: 20px;
+    padding: 10px;
+    
    
 }
 
-}
-main {       
-        
-}
 
 h2{
     font-family: "Arial";
     text-decoration: underline;
     padding:15px;
+    margin:15px;
 }
 img{
     position: relative;
@@ -72,10 +74,12 @@ img{
     border-bottom: 5px solid black;
     border-top: 5px solid black;
     float:left;
-    
+
     box-sizing: border-box;
     margin:0;     
     }
+
+
 
 
 
