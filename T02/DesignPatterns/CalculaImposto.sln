@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoPatterns", "ConsoleApp2\CursoPatterns.csproj", "{F30284B8-1EF5-429A-8421-5808D072B2A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banco", "Banco\Banco.csproj", "{131C2E89-DB95-4B27-9059-81D380AC8212}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F30284B8-1EF5-429A-8421-5808D072B2A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F30284B8-1EF5-429A-8421-5808D072B2A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F30284B8-1EF5-429A-8421-5808D072B2A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F30284B8-1EF5-429A-8421-5808D072B2A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{131C2E89-DB95-4B27-9059-81D380AC8212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{131C2E89-DB95-4B27-9059-81D380AC8212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{131C2E89-DB95-4B27-9059-81D380AC8212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{131C2E89-DB95-4B27-9059-81D380AC8212}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05A6F404-7C89-441F-B805-5705E963ACFF}
+	EndGlobalSection
+EndGlobal
