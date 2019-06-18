@@ -8,7 +8,7 @@ namespace ConsoleApp2
 {
     public class ICCC:Imposto
     {
-        public double Calcula(Orçamento orçamento)
+        public override double Calcula(Orçamento orçamento)
         {
 
 

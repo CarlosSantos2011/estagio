@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    public class ISS:Imposto
+    public class ISS : Imposto
+
     {
-        public double Calcula(Orçamento orçamento)
+        public ISS(Imposto outroImposto) : base(outroImposto) { }
+
+        public ISS(): base() { }
+
+        public override double Calcula(Orçamento orçamento)
         {
-            return orçamento.Valor * 0.06;
+            return orçamento.Valor * 0.06  + CalculaOutroImposto(orçamento);
         }
 
     }

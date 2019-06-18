@@ -6,9 +6,24 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    public interface Imposto
+    public abstract class Imposto
     {
-        double Calcula(Orçamento orçamento);
+        public Imposto OutroImposto { get; set; }
+
+        public Imposto(Imposto outroImposto )
+        {
+            this.OutroImposto = outroImposto;
+        }
+        public Imposto()
+        {
+            OutroImposto = null;
+        }
+        protected double CalculaOutroImposto(Orçamento orçamento)
+        {
+            return (OutroImposto == null ? 0 : OutroImposto.Calcula(orçamento));
+        }
+
+        public abstract double Calcula(Orçamento orçamento);
     }
     
 }

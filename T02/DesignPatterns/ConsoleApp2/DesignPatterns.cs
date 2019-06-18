@@ -10,18 +10,11 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            Imposto iss = new ISS();
-            Imposto icms = new ICMS();
-            Orçamento orçamento = new Orçamento(50.00);
-            CalculaImposto calculador = new CalculaImposto();
+            Imposto imposto = new ISS(new ICMS());
+            Orçamento orçamento = new Orçamento(500.0);
+            Console.WriteLine(imposto.Calcula(orçamento));
 
-            calculador.RealizaCalculo(orçamento, iss);
-            calculador.RealizaCalculo(orçamento, icms);
 
-            Orçamento reforma = new Orçamento(3000.0);
-
-            Imposto novoImposto = new ICCC();
-            Console.WriteLine(novoImposto.Calcula(reforma));
             Console.ReadLine();
         }
        

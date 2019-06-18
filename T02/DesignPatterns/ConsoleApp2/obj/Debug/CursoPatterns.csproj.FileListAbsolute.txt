@@ -12,3 +12,10 @@ C:\Users\stag005\estagiogithub\estagio\T02\DesignPatterns\ConsoleApp2\obj\Debug\
 C:\Users\stag005\estagiogithub\estagio\T02\DesignPatterns\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
 C:\Users\stag005\estagiogithub\estagio\T02\DesignPatterns\ConsoleApp2\bin\Debug\ConsoleApp2.exe
 C:\Users\stag005\estagiogithub\estagio\T02\DesignPatterns\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T02\DesignPatterns\ConsoleApp2\obj\Debug\CursoPatterns.csprojAssemblyReference.cache
+C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T02\DesignPatterns\ConsoleApp2\obj\Debug\CursoPatterns.csproj.CoreCompileInputs.cache
+C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T02\DesignPatterns\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T02\DesignPatterns\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
+C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T02\DesignPatterns\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T02\DesignPatterns\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T02\DesignPatterns\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
