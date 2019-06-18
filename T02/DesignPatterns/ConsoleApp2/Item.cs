@@ -8,6 +8,8 @@ namespace ConsoleApp2
 {
     public class Item
     {
+        internal string getNome;
+
         public String Nome { get; private set; }
         public double Valor { get; private set; }
         
