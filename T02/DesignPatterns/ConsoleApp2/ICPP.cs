@@ -8,6 +8,11 @@ namespace ConsoleApp2
 {
     public class ICPP : TemplateDeImpostosCondicional
     {
+        public override double Calcula(Orçamento orçamento)
+        {
+            throw new NotImplementedException();
+        }
+
         public override bool DeveUsarMaximaTaxacao(Orçamento orçamento)
         {
             return orçamento.Valor >= 500;

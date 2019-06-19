@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aprovado.cs" />
     <Compile Include="Arrojado.cs" />
     <Compile Include="CalculaDesconto.cs" />
     <Compile Include="CalculaImposto.cs" />
@@ -52,9 +53,16 @@
     <Compile Include="DescontoPorMaisDeQuinhentosReais.cs" />
     <Compile Include="DescontoPorVendaCasada.cs" />
     <Compile Include="DesignPatterns.cs" />
+    <Compile Include="EmAprovacao.cs" />
+    <Compile Include="Filtro.cs" />
+    <Compile Include="FiltroMaiorQue500MilReais.cs" />
+    <Compile Include="FiltroMenorQue100Reais.cs" />
+    <Compile Include="FiltroMesmoMes.cs" />
+    <Compile Include="Finalizado.cs" />
     <Compile Include="ICCC.cs" />
     <Compile Include="ICMS.cs" />
     <Compile Include="ICPP.cs" />
+    <Compile Include="IEstadoDeUmOrcamento.cs" />
     <Compile Include="IHIT.cs" />
     <Compile Include="IKCV.cs" />
     <Compile Include="Imposto.cs" />
@@ -68,6 +76,7 @@
     <Compile Include="RealizadorDeInvestimentos.cs" />
     <Compile Include="Relatorio.cs" />
     <Compile Include="RelatorioSimples.cs" />
+    <Compile Include="Reprovado.cs" />
     <Compile Include="SemDesconto.cs" />
     <Compile Include="TemplateDeImpostosCondicional.cs" />
     <Compile Include="TestaCorrente.cs" />

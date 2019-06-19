@@ -10,14 +10,26 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            Imposto imposto = new ISS(new ICMS());
-            Orçamento orçamento = new Orçamento(500.0);
-            Console.WriteLine(imposto.Calcula(orçamento));
+            //Imposto imposto = new ISS(new ICMS());
+            //Orçamento orçamento = new Orçamento(500.0);
+            //Console.WriteLine(imposto.Calcula(orçamento));
 
 
-            Console.ReadLine();
+            //Console.ReadLine();
+
+            Orçamento reforma = new Orçamento(500.0);
+
+            reforma.AplicaDescontoExtra();
+            Console.WriteLine(reforma.Valor); // imprime 475,00 pois descontou 5%
+            reforma.Aprova(); // aprova nota!
+
+            reforma.AplicaDescontoExtra();
+            Console.WriteLine(reforma.Valor); // imprime 465,50 pois descontou 2%
+
+            reforma.Finaliza();
+
         }
-       
+
 
     }
 }

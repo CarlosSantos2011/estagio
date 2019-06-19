@@ -8,6 +8,15 @@ namespace ConsoleApp2
 {
     public class IKCV : TemplateDeImpostosCondicional
     {
+        public IKCV() : base() { }
+
+        public IKCV(Imposto outroImposto) : base(outroImposto) { }
+
+        public override double Calcula(Orçamento orçamento)
+        {
+            throw new NotImplementedException();
+        }
+
         public override bool DeveUsarMaximaTaxacao(Orçamento orçamento)
         {
             return orçamento.Valor >= 500 && TemItemMaiorQue100ReaisNo(orçamento);
@@ -20,6 +29,9 @@ namespace ConsoleApp2
         {
             return orçamento.Valor * 0.06;
         }
+
+        
+
         private bool TemItemMaiorQue100ReaisNo(Orçamento orçamento)
         {
             foreach(Item item in orçamento.Itens)
