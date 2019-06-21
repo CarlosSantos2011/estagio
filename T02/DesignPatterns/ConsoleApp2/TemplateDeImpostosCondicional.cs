@@ -8,6 +8,7 @@ namespace ConsoleApp2
 {
     public abstract class TemplateDeImpostoCondicional : Imposto
     {
+<<<<<<< HEAD
         public TemplateDeImpostoCondicional(Imposto outroImposto) : base(outroImposto) { }
 
         public TemplateDeImpostoCondicional() : base() { }
@@ -15,6 +16,18 @@ namespace ConsoleApp2
 
 
         public override double Calcula (Orçamento orçamento)
+=======
+        protected TemplateDeImpostosCondicional()
+        {
+        }
+
+        protected TemplateDeImpostosCondicional(Imposto outroImposto)
+        {
+            OutroImposto = outroImposto;
+        }
+
+        private double Calcula (Orçamento orçamento)
+>>>>>>> c8a0aa5629f957749de162c43bf616e0cd7ef943
         {
             if(DeveUsarMaximaTaxacao  (orçamento))
             {

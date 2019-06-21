@@ -13,6 +13,13 @@ namespace ConsoleApp2
 
         public IKCV(Imposto outroImposto) : base(outroImposto) { }
 
+<<<<<<< HEAD
+=======
+        public override double Calcula(Orçamento orçamento)
+        {
+            throw new NotImplementedException();
+        }
+>>>>>>> c8a0aa5629f957749de162c43bf616e0cd7ef943
 
         public override bool DeveUsarMaximaTaxacao(Orçamento orçamento)
         {
@@ -26,6 +33,9 @@ namespace ConsoleApp2
         {
             return orçamento.Valor * 0.06;
         }
+
+        
+
         private bool TemItemMaiorQue100ReaisNo(Orçamento orçamento)
         {
             foreach(Item item in orçamento.Itens)
