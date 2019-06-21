@@ -8,28 +8,24 @@ namespace ConsoleApp2
 {
     public class Program
     {
-        static void Main(string[] args)
+        static void Main(String[] args)
         {
-            //Imposto imposto = new ISS(new ICMS());
-            //Orçamento orçamento = new Orçamento(500.0);
-            //Console.WriteLine(imposto.Calcula(orçamento));
+            CriadorDeNotaFiscal criador = new CriadorDeNotaFiscal();
+            criador.ParaEmpresa("empresa");
+            criador.ComCnpj("23213");
+            criador.ComItem(new ItemDaNota("item 1", 100.00));
+            criador.ComItem(new ItemDaNota("item 2", 50.00));
 
+            NotaFiscal nf = criador.Constroi();
 
-            //Console.ReadLine();
-
-            Orçamento reforma = new Orçamento(500.0);
-
-            reforma.AplicaDescontoExtra();
-            Console.WriteLine(reforma.Valor); // imprime 475,00 pois descontou 5%
-            reforma.Aprova(); // aprova nota!
-
-            reforma.AplicaDescontoExtra();
-            Console.WriteLine(reforma.Valor); // imprime 465,50 pois descontou 2%
-
-            reforma.Finaliza();
-
-        }
-
+            Console.WriteLine(nf.ValorBruto);
+            Console.ReadKey();
+        }    
 
     }
 }
+
+
+
+
+    

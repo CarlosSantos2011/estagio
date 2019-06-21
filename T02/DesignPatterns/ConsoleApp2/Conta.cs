@@ -8,16 +8,23 @@ namespace ConsoleApp2
 {
     public class Conta
     {
-        public double Saldo{ get; private set; }
-        public int Valor { get; internal set; }
-        public object DataAbertura { get; internal set; }
+        public double Saldo { get; private set; }
 
-        public void Deposita(double valor)
+        interface IEstadoDaConta
         {
-            this.Saldo += valor;
+            void Saca(Conta c, double valor);
+            void Deposita(Conta c, double valor);
         }
-            
-
-        
+        class Positivo : IEstadoDaConta
+        {
+            public void Saca(Conta c, double valor)
+            {
+                c.Saldo -= valor;
+            }
+            public void Deposita(Conta c, double valor)
+            {
+                c.Saldo += valor;
+            }
+        }
     }
 }

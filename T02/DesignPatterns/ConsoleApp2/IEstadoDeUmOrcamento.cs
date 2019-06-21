@@ -12,5 +12,6 @@ namespace ConsoleApp2
         void Aprova(Orçamento orçamento);
         void Reprova(Orçamento orçamento);
         void Finaliza(Orçamento orçamento);
+        void AplicaDesconto(Orçamento orçamento);
     }
 }

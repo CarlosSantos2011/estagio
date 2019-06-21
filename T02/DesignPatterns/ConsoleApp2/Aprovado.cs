@@ -8,9 +8,22 @@ namespace ConsoleApp2
 {
     public class Aprovado : IEstadoDeUmOrcamento
     {
+        private bool descontoAplicado = false;
+        public void AplicaDesconto(Orçamento orçamento)
+        {
+            throw new NotImplementedException();
+        }
+
         public void AplicaDescontoExtra(Orçamento orçamento)
         {
-            orçamento.Valor -= orçamento.Valor*0.02;
+            if (!descontoAplicado)
+            {
+                orçamento.Valor -= orçamento.Valor * 0.02;
+            }
+            else
+            {
+                throw new Exception("Desconto já aplicado");
+            }
         }
 
         public void Aprova(Orçamento orçamento)

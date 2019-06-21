@@ -9,35 +9,39 @@ namespace ConsoleApp2
 
     public class Orçamento
     {
+        public IEstadoDeUmOrcamento AplicaDescontoExtra { get; set; }
         public IEstadoDeUmOrcamento EstadoAtual { get; set; }
         public double Valor { get;  set; }
         public IList<Item> Itens { get; private set; }
         public Orçamento(double valor)
 
-        {
-            this.EstadoAtual = EmAprovacao();
+
+
+        { 
             this.Valor = valor;
             this.Itens = new List<Item>();
-
         }
 
-        private IEstadoDeUmOrcamento EmAprovacao()
+        public void EmAprovacao()
         {
-            throw new Exception("Agardando Aprovação");
+            throw new Exception("Em processo de aprovação");
         }
+
+
         public Orçamento()
         {
             this.EstadoAtual = new EmAprovacao();
         }
+        //public void AplicaDescontoExtra( )
+        //{
+        //    EstadoAtual.AplicaDescontoExtra(this);
+        //}
+       
+        public void AplicaDesconto(Orçamento orçamento)
+        {
+            EstadoAtual.AplicaDesconto(this);
+        }
 
-        public void AplicaDesconto (Orçamento orçamento)
-        {
-            EstadoAtual.AplicaDescontoExtra(this);
-        }
-        public void AplicaDescontoExtra()
-        {
-            EstadoAtual.AplicaDescontoExtra(this);
-        }
 
         public void Aprova()
         {

@@ -8,6 +8,11 @@ namespace ConsoleApp2
 {
     public class Finalizado : IEstadoDeUmOrcamento
     {
+        public void AplicaDesconto(Orçamento orçamento)
+        {
+            throw new NotImplementedException();
+        }
+
         public void AplicaDescontoExtra(Orçamento orçamento)
         {
             throw new Exception("Orçamento Finalizado não recebe desconto");
