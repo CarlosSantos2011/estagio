@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    public class IKCV : TemplateDeImpostosCondicional
+    public class IKCV : TemplateDeImpostoCondicional
+    
     {
+        public IKCV() : base() { }
+
+        public IKCV(Imposto outroImposto) : base(outroImposto) { }
+
+
         public override bool DeveUsarMaximaTaxacao(Orçamento orçamento)
         {
             return orçamento.Valor >= 500 && TemItemMaiorQue100ReaisNo(orçamento);

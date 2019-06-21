@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    public class ICPP : TemplateDeImpostosCondicional
+    public class ICPP : TemplateDeImpostoCondicional
     {
+        public ICPP() : base() { }
+        public ICPP(Imposto outroImposto) : base(outroImposto) { }
         public override bool DeveUsarMaximaTaxacao(Orçamento orçamento)
         {
             return orçamento.Valor >= 500;

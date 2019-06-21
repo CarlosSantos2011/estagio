@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-   public abstract class TemplateDeImpostosCondicional : Imposto
+    public abstract class TemplateDeImpostoCondicional : Imposto
     {
-        public double Calcula (Orçamento orçamento)
+        public TemplateDeImpostoCondicional(Imposto outroImposto) : base(outroImposto) { }
+
+        public TemplateDeImpostoCondicional() : base() { }
+
+
+
+        public override double Calcula (Orçamento orçamento)
         {
             if(DeveUsarMaximaTaxacao  (orçamento))
             {
