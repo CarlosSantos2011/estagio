@@ -16,8 +16,13 @@ namespace ConsoleApp2
             criador.ComItem(new ItemDaNota("item 1", 100.00));
             criador.ComItem(new ItemDaNota("item 2", 50.00));
 
+            criador.AdicionaAcao(new EnviadorDeEmail());
+            criador.AdicionaAcao(new NotaFiscalDAO());
+            criador.AdicionaAcao(new EnviadorDeSms());
+             
             NotaFiscal nf = criador.Constroi();
 
+            Console.WriteLine(nf.Impostos);
             Console.WriteLine(nf.ValorBruto);
             Console.ReadKey();
         }    

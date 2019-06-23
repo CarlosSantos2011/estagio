@@ -8,13 +8,21 @@ namespace ConsoleApp2
 {
     public class Conta
     {
-        public double Saldo { get; private set; }
+        public double Saldo { get;  set; }
+        public int Valor { get; internal set; }
+        public Negativo Estado { get; internal set; }
 
         interface IEstadoDaConta
         {
             void Saca(Conta c, double valor);
             void Deposita(Conta c, double valor);
         }
+
+        internal void Deposita(double v)
+        {
+            throw new NotImplementedException();
+        }
+
         class Positivo : IEstadoDaConta
         {
             public void Saca(Conta c, double valor)
@@ -26,5 +34,9 @@ namespace ConsoleApp2
                 c.Saldo += valor;
             }
         }
+    }
+
+    public class Negativo
+    {
     }
 }
