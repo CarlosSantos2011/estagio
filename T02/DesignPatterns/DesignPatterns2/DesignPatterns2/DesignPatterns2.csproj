@@ -57,8 +57,15 @@
     <Compile Include="Aula3\Contrato.cs" />
     <Compile Include="Aula3\Estado.cs" />
     <Compile Include="Aula3\Historico.cs" />
+    <Compile Include="Aula4\Divisao.cs" />
+    <Compile Include="Aula4\IExpressao.cs" />
+    <Compile Include="Aula4\Multiplicacao.cs" />
+    <Compile Include="Aula4\Numero.cs" />
+    <Compile Include="Aula4\Raiz.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Aula4\Soma.cs" />
+    <Compile Include="Aula4\Subtracao.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
