@@ -4,20 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns2.Aula4
-{
-    public class RaizQuadrada : IExpressao
-    {
-        private IExpressao expressao;
+//
+//{
+//    public class RaizQuadrada : IExpressao
+//    {
+//        private IExpressao expressao;
 
-        public RaizQuadrada(IExpressao e)
-        {
-            this.expressao = e;
-        }
+//        public RaizQuadrada(IExpressao e)
+//        {
+//            this.expressao = e;
+//        }
 
-        public int Avalia()
-        {
-            return (int)Math.Sqrt(expressao.Avalia());
-        }
-    }
-}
+//        public int Avalia()
+//        {
+//            return (int)Math.Sqrt(expressao.Avalia());
+//        }
+//    }
+//}
+//

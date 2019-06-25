@@ -59,8 +59,11 @@
     <Compile Include="Aula3\Historico.cs" />
     <Compile Include="Aula4\Divisao.cs" />
     <Compile Include="Aula4\IExpressao.cs" />
+    <Compile Include="Aula4\ImpressoraVisitor.cs" />
+    <Compile Include="Aula4\IVisitor.cs" />
     <Compile Include="Aula4\Multiplicacao.cs" />
     <Compile Include="Aula4\Numero.cs" />
+    <Compile Include="Aula4\PreFixaVisitor.cs" />
     <Compile Include="Aula4\Raiz.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,6 +72,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Aula6\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

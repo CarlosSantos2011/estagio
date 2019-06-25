@@ -9,5 +9,6 @@ namespace DesignPatterns2.Aula4
    public interface IExpressao
     {
         int Avalia();
+        void Aceita(IVisitor visitor);
     }
 }

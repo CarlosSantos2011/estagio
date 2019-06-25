@@ -1,0 +1,9 @@
+﻿namespace DesignPatterns2.Aula4
+{
+    public interface IVisitor
+    {
+        void ImprimeSoma(Soma soma);
+        void ImprimeSubtracao(Subtracao subtracao);
+        void ImprimeNumero(Numero numero);
+    }
+}
