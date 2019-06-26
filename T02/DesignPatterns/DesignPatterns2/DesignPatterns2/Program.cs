@@ -1,5 +1,7 @@
 ﻿using DesignPatterns2.Aula3;
 using DesignPatterns2.Aula4;
+using DesignPatterns2.Aula6;
+using DesignPatterns2.Aula7;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,12 +23,29 @@ namespace DesignPatterns2
 
             //int resultado = conta.Avalia();
 
-            Expression soma = Expression.Add(Expression.Constant(10), Expression.Constant(20)); // 10 + 20
+            //Expression soma = Expression.Add(Expression.Constant(10), Expression.Constant(20)); // 10 + 20
 
-            Func<int> interpreter = Expression.Lambda<Func<int>>(soma).Compile();
-            int resultado = interpreter();
+            //Func<int> interpreter = Expression.Lambda<Func<int>>(soma).Compile();
+            //int resultado = interpreter();
 
-            Console.WriteLine(resultado);
+            //Console.WriteLine(resultado);
+
+            Pedido pedido1 = new Pedido("Mauricio", 150.0);
+            Pedido pedido2 = new Pedido("Marcelo", 250.0);
+
+            FilaDeTrabalho fila = new FilaDeTrabalho();
+
+            fila.Adiciona(new PagaPedido(pedido1));
+            fila.Adiciona(new PagaPedido(pedido2));
+            fila.Adiciona(new FinalizaPedido(pedido1));
+
+            fila.Processa();
+
+            Console.WriteLine(pedido1);
+
+            Console.ReadLine();
+
+
         }    
     }
 }
