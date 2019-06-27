@@ -2,16 +2,20 @@
 using DesignPatterns2.Aula4;
 using DesignPatterns2.Aula6;
 using DesignPatterns2.Aula7;
+using DesignPatterns2.Aula8;
+using DesignPatterns2.Aula9;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace DesignPatterns2
 {
-    class Program 
+    class Program
     {
         static void Main(string[] args)
         {
@@ -30,22 +34,35 @@ namespace DesignPatterns2
 
             //Console.WriteLine(resultado);
 
-            Pedido pedido1 = new Pedido("Mauricio", 150.0);
-            Pedido pedido2 = new Pedido("Marcelo", 250.0);
+            //Pedido pedido1 = new Pedido("Mauricio", 150.0);
+            //Pedido pedido2 = new Pedido("Marcelo", 250.0);
 
-            FilaDeTrabalho fila = new FilaDeTrabalho();
+            //FilaDeTrabalho fila = new FilaDeTrabalho();
 
-            fila.Adiciona(new PagaPedido(pedido1));
-            fila.Adiciona(new PagaPedido(pedido2));
-            fila.Adiciona(new FinalizaPedido(pedido1));
+            //fila.Adiciona(new PagaPedido(pedido1));
+            //fila.Adiciona(new PagaPedido(pedido2));
+            //fila.Adiciona(new FinalizaPedido(pedido1));
 
-            fila.Processa();
+            //fila.Processa();
 
-            Console.WriteLine(pedido1);
+            //Console.WriteLine(pedido1);
 
-            Console.ReadLine();
+            //Console.ReadLine();
+            //Cliente cliente = new Cliente();
+            //cliente.Nome = "carlos";
+            //cliente.Endereco = "Rua Alceste";
+            //cliente.DataDeNascimento = DateTime.Now;
 
+            //GeradorXml gerador = new GeradorXml();
+            //String xml = gerador.GeraXml(cliente);
 
-        }    
+            EmpresaFacade facade = new EmpresaFacadeSingleton().Instancia;
+            Cliente cliente = facade.BuscaCliente(cpf);
+
+            var fatura = facade.CriaFatura(cliente, 5000);
+            facade.GeraCobranca(tipo.Boleto, fatura);
+
+        }
     }
+
 }

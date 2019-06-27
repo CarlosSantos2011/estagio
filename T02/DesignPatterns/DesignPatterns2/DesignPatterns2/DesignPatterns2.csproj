@@ -76,6 +76,12 @@
     <Compile Include="Aula7\IComando.cs" />
     <Compile Include="Aula7\PagaPedido.cs" />
     <Compile Include="Aula7\Pedido.cs" />
+    <Compile Include="Aula8\Cliente.cs" />
+    <Compile Include="Aula8\GeradorXml.cs" />
+    <Compile Include="Aula9\EmpresaFacade.cs" />
+    <Compile Include="Aula9\EmpresaFacadeSingleton.cs" />
+    <Compile Include="Aula9\Servico.cs" />
+    <Compile Include="Aula9\ServicoSingleton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Aula4\Soma.cs" />
