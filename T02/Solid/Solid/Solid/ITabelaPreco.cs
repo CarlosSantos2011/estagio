@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Solid
 {
-    class Program
+    public interface ITabelaPreco
     {
-        static void Main(string[] args)
-        {
-            
-        }
+        double DescontoPara(double valor);
     }
+    
 }
