@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Solid
 {
-    class Program
+    public interface IServicoDeEntrega
     {
-        static void Main(string[] args)
-        {
-            
-        }
+        double Para(String cidade);
     }
 }
