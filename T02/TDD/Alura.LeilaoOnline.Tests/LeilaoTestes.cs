@@ -7,13 +7,24 @@ namespace Alura.LeilaoOnline.Tests
 {
     public class LeilaoTestes
     {
-        [Fact]
-        public void LeilaoComVariosLances()
+      
+        
+       
+        [Theory]
+        [InlineData(1000,new double[] { 800, 900, 1000, 1200 })]
+        [InlineData(1000,new double[] { 800, 900, 1000, 990 })]
+        [InlineData(800, new double[] { 800 })]
+        public void LeilaoComVariosLances(double ValorEsperado, 
+            double[] ofertas)
         {
             var leilao = new Leilao("Van Gogh");
             var fulano = new Interessada("Fulano", leilao);
             var maria = new Interessada("Maria", leilao);
 
+            foreach(var valor in ofertas)
+            {
+                leilao.RecebeLance(fulano, valor);
+            }
             //Arranje
             leilao.RecebeLance(fulano, 800);
             leilao.RecebeLance(maria, 900);
@@ -32,22 +43,21 @@ namespace Alura.LeilaoOnline.Tests
 
         }
         [Fact]
-        public void LeilaoComApenasUmLance()
+        public void LeilaoSemLances()
         {
+
             var leilao = new Leilao("Van Gogh");
-            var fulano = new Interessada("Fulano", leilao);
-
-
             //Arranje
-            leilao.RecebeLance(fulano, 800);
+           
             //Act
             leilao.TerminaPregao();
 
-            var valorEsperado = 800;
+            var valorEsperado = 0;
             var valorObtido = leilao.Ganhador.Valor;
 
             Assert.Equal(valorEsperado, valorObtido);
-            
+
         }
+        
     }
 }

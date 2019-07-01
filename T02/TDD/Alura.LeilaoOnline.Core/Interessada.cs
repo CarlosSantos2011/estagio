@@ -3,12 +3,12 @@
     public class Interessada
     {
         public string Nome { get; }
-        public Leilao Leilao { get; }
+        public Leilao leilao { get; }
 
         public Interessada(string nome, Leilao leilao)
         {
             Nome = nome;
-            Leilao = leilao;
+            this.leilao = leilao;
         }
     }
 }
