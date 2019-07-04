@@ -45,7 +45,9 @@ namespace ByteBank.Portal.Infraestrutura
 
 
                 var assembly = Assembly.GetExecutingAssembly();
-                var nomeResource = "ByteBank.Portal.Assets.css.styles.css";
+               
+
+                var nomeResource = Utilidades.ConverterPathParaNomeAssembly(path);
 
                 var resourceStream = assembly.GetManifestResourceStream(nomeResource);
                 var bytesResource = new byte[resourceStream.Length];
@@ -72,7 +74,7 @@ namespace ByteBank.Portal.Infraestrutura
 
                 resourceStream.Read(bytesResource, 0, (int)resourceStream.Length);
 
-                resposta.ContentType = "application/js; charset=utf-8";
+                resposta.ContentType = Utilidades.ObterTiposDeConteudo(path);
                 resposta.StatusCode = 200;
                 resposta.ContentLength64 = resourceStream.Length;
 
