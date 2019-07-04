@@ -45,12 +45,20 @@ namespace ByteBank.Portal.Infraestrutura
 
 
                 var assembly = Assembly.GetExecutingAssembly();
-               
+
 
                 var nomeResource = Utilidades.ConverterPathParaNomeAssembly(path);
 
                 var resourceStream = assembly.GetManifestResourceStream(nomeResource);
                 var bytesResource = new byte[resourceStream.Length];
+
+                if (resourceStream == null)
+                {
+                    resposta.StatusCode = 404;
+                    resposta.OutputStream.Close();
+                
+                }
+                var bytesResource = new byte[resourceStream.Lenght];
 
                 resourceStream.Read(bytesResource, 0, (int)resourceStream.Length);
 
@@ -70,17 +78,7 @@ namespace ByteBank.Portal.Infraestrutura
                 var nomeResource = "ByteBank.Portal.Assets.js.main.js";
 
                 var resourceStream = assembly.GetManifestResourceStream(nomeResource);
-                var bytesResource = new byte[resourceStream.Length];
-
-                resourceStream.Read(bytesResource, 0, (int)resourceStream.Length);
-
-                resposta.ContentType = Utilidades.ObterTiposDeConteudo(path);
-                resposta.StatusCode = 200;
-                resposta.ContentLength64 = resourceStream.Length;
-
-                resposta.OutputStream.Write(bytesResource, 0, bytesResource.Length);
-
-                resposta.OutputStream.Close();
+               
 
             }
             httpListener.Stop();
