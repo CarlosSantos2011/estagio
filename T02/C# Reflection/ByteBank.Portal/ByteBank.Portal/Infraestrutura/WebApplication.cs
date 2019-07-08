@@ -12,19 +12,20 @@ namespace ByteBank.Portal.Infraestrutura
     public class WebApplication
     {
         private readonly string[] _prefixos;
-        public WebApplication (string[] prefixos)
+
+        public WebApplication(string[] prefixos)
         {
             if (prefixos == null)
-            {
-                throw new ArgumentException(nameof(prefixos)); 
-            }
+                throw new ArgumentNullException(nameof(prefixos));
             _prefixos = prefixos;
         }
+
         public void Iniciar()
         {
             while (true)
                 ManipularRequisicao();
         }
+
         private void ManipularRequisicao()
         {
             var httpListener = new HttpListener();
@@ -40,34 +41,18 @@ namespace ByteBank.Portal.Infraestrutura
 
             var path = requisicao.Url.AbsolutePath;
 
-
-            if (Utilidades.EhArquivo(path))
+            if(Utilidades.EhArquivo(path))
             {
-                {
-                    var manipulador = new ManipuladorRequisicaoArquivo();
-                    manipulador.Manipular(resposta, path);
-                }
-                var assembly = Assembly.GetExecutingAssembly();
-
-                var nomeResource = Utilidades.ConverterPathParaNomeAssembly(path);
-
-                var resourceStream = assembly.GetManifestResourceStream(nomeResource);
-
-                if (resourceStream == null)
-                {
-                    resposta.StatusCode = 404;
-                    resposta.OutputStream.Close();
-                }
-                else
-                {
-                    var manipulador = new ManipuladorRequisicaoController();
-                    manipulador.Manipular(resposta, path);
-                }
-                httpListener.Stop();
+                var manipulador = new ManipuladorRequisicaoArquivo();
+                manipulador.Manipular(resposta, path);
             }
-            
-        }
+            else
+            {
+                var manipulador = new ManipuladorRequisicaoController();
+                manipulador.Manipular(resposta, path);
+            }
 
-        
+            httpListener.Stop();
+        }
     }
 }
