@@ -9,11 +9,19 @@ botaoAdicionar.addEventListener("click", function(event) {
     var pacienteTr = montaTr(paciente);
 
     var erros = validaPaciente(paciente);
+<<<<<<< HEAD
 
     if (erros.length > 0) {
         exibeMensagensDeErro(erros);
 
         return;
+=======
+    console.log(erros);
+    if(erros.length > 0){
+
+      exibeMensagensDeErro(erros);
+      return;
+>>>>>>> 5626cb37fc38a4a4960eb85d48207b960f86ad90
     }
 
     var tabela = document.querySelector("#tabela-pacientes");
@@ -21,11 +29,29 @@ botaoAdicionar.addEventListener("click", function(event) {
     tabela.appendChild(pacienteTr);
 
     form.reset();
+<<<<<<< HEAD
 
     var mensagensErro = document.querySelector("#mensagens-erro");
     mensagensErro.innerHTML = "";
 
 });
+=======
+    var mensagensErro = document.querySelector("#mensagem-erro");
+    mensagensErro.innerHTML("");
+});
+
+function exibeMensagensDeErro (erros){
+  var ul = document.querySelector("#mensagens-erro");
+  ul.innerHTML = "";
+  erros.forEach(function(erro)
+  {
+    var li = document.createElement("li");
+    li.textContent = erro;
+    ul.appendChild(li);
+  })
+}
+
+>>>>>>> 5626cb37fc38a4a4960eb85d48207b960f86ad90
 
 function obtemPacienteDoFormulario(form) {
 
@@ -61,6 +87,7 @@ function montaTd(dado, classe) {
     return td;
 }
 
+<<<<<<< HEAD
 function validaPaciente(paciente) {
 
     var erros = [];
@@ -102,3 +129,22 @@ function exibeMensagensDeErro(erros) {
         ul.appendChild(li);
     });
 }
+=======
+function validaPaciente(paciente)
+{
+  var erros =[];
+
+    if(paciente.nome.length == 0) erros.push ("O nome n pode ser em branco");
+
+    if(!validaPeso(paciente.peso)) erros.push("peso invalido");
+
+    if(!validaAltura(paciente.altura)) erros.push("altura invalida");
+
+    if(paciente.gordura.length ==0) erros.push("gordura nao pode ser em branco");
+
+    if (paciente.peso.length == 0) erros.push ("O peso nao pode ser em branco");
+
+
+    return erros;
+}
+>>>>>>> 5626cb37fc38a4a4960eb85d48207b960f86ad90
