@@ -24,9 +24,26 @@
 .borda-vermelha {
     border: 3px solid red;
 }
-.placar{
+
+.placar {
+    display: none;
+}
+
+body {
+    overflow: scroll;
+}
+#erro{
+  color: red;
   display:none;
 }
-body{
-  overflow:scroll;
+#spinner{
+  display: none;
+}
+
+#frase-id{
+  width:50px;
+
+}
+#botao-sync{
+  float:right;
 }
