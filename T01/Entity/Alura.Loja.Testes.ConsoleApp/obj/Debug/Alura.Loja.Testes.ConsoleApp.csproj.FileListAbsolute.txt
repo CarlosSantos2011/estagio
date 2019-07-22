@@ -152,3 +152,7 @@ C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Lingua
 C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T02\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
 C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T02\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
 C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T02\Alura.Loja.Testes.ConsoleApp\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T01\Entity\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.csprojAssemblyReference.cache
+C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T01\Entity\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T01\Entity\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.exe
+C:\Users\Game Room\Desktop\Benner, Livros, Estudos, Programas, Comandos e Linguagens\Alura\C#\T01\Entity\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.pdb
