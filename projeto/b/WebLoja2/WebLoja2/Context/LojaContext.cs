@@ -10,14 +10,10 @@ using WebLoja2.Models;
 namespace WebLoja2.Context
 {
     public class LojaContext : DbContext
-    {
-        
-        public LojaContext():base()
-        {
-
-        }
+    {     
+       
         public DbSet <Pessoa> Pessoas { get; set; }
-        
+        public DbSet <Clientes> Clientes { get; set; }
 
 
 

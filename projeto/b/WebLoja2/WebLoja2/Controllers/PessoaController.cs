@@ -13,9 +13,7 @@ namespace WebLoja2.Controllers
         // GET: Pessoa
         public ActionResult Index()
         {
-            PessoaDAO dao = new PessoaDAO();
-            IList <Pessoa> pessoas = dao.Lista();
-            ViewBag.Pessoa = pessoas;
+           
             return View();
         }
     }

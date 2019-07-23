@@ -7,8 +7,10 @@ namespace WebLoja2.Models
 {
     public class Clientes : Pessoa
     {
-        public string Cpf { get; private set; }
 
+        public string Cpf { get;  set; }
+        public  Pessoa Pessoa { get; set; }
+        public int PessoaId { get; set; }
         public Clientes(string nome, int id, string cpf)
         {
             Nome = nome;
