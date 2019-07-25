@@ -1,0 +1,10 @@
+C:\Users\stag005\estagiogithub\estagio\T02\C# Reflection\ByteBank.Portal\ByteBank.Portal\bin\Debug\ByteBank.Portal.exe.config
+C:\Users\stag005\estagiogithub\estagio\T02\C# Reflection\ByteBank.Portal\ByteBank.Portal\bin\Debug\ByteBank.Portal.exe
+C:\Users\stag005\estagiogithub\estagio\T02\C# Reflection\ByteBank.Portal\ByteBank.Portal\bin\Debug\ByteBank.Portal.pdb
+C:\Users\stag005\estagiogithub\estagio\T02\C# Reflection\ByteBank.Portal\ByteBank.Portal\obj\Debug\ByteBank.Portal.csprojAssemblyReference.cache
+C:\Users\stag005\estagiogithub\estagio\T02\C# Reflection\ByteBank.Portal\ByteBank.Portal\obj\Debug\ByteBank.Portal.csproj.CoreCompileInputs.cache
+C:\Users\stag005\estagiogithub\estagio\T02\C# Reflection\ByteBank.Portal\ByteBank.Portal\obj\Debug\ByteBank.Portal.exe
+C:\Users\stag005\estagiogithub\estagio\T02\C# Reflection\ByteBank.Portal\ByteBank.Portal\obj\Debug\ByteBank.Portal.pdb
+C:\Users\stag005\estagiogithub\estagio\T02\C# Reflection\ByteBank.Portal\ByteBank.Portal\bin\Debug\ByteBank.Source.dll
+C:\Users\stag005\estagiogithub\estagio\T02\C# Reflection\ByteBank.Portal\ByteBank.Portal\bin\Debug\ByteBank.Source.pdb
+C:\Users\stag005\estagiogithub\estagio\T02\C# Reflection\ByteBank.Portal\ByteBank.Portal\obj\Debug\ByteBank.Portal.csproj.CopyComplete

@@ -1,0 +1,14 @@
+C:\Users\stag005\source\repos\DesignPatterns2\DesignPatterns2\obj\Debug\DesignPatterns2.csprojAssemblyReference.cache
+C:\Users\stag005\source\repos\DesignPatterns2\DesignPatterns2\obj\Debug\DesignPatterns2.csproj.CoreCompileInputs.cache
+C:\Users\stag005\source\repos\DesignPatterns2\DesignPatterns2\bin\Debug\DesignPatterns2.exe.config
+C:\Users\stag005\source\repos\DesignPatterns2\DesignPatterns2\bin\Debug\DesignPatterns2.exe
+C:\Users\stag005\source\repos\DesignPatterns2\DesignPatterns2\bin\Debug\DesignPatterns2.pdb
+C:\Users\stag005\source\repos\DesignPatterns2\DesignPatterns2\obj\Debug\DesignPatterns2.exe
+C:\Users\stag005\source\repos\DesignPatterns2\DesignPatterns2\obj\Debug\DesignPatterns2.pdb
+C:\Users\stag005\estagiogithub\estagio\T02\DesignPatterns\DesignPatterns2\DesignPatterns2\bin\Debug\DesignPatterns2.exe.config
+C:\Users\stag005\estagiogithub\estagio\T02\DesignPatterns\DesignPatterns2\DesignPatterns2\bin\Debug\DesignPatterns2.exe
+C:\Users\stag005\estagiogithub\estagio\T02\DesignPatterns\DesignPatterns2\DesignPatterns2\bin\Debug\DesignPatterns2.pdb
+C:\Users\stag005\estagiogithub\estagio\T02\DesignPatterns\DesignPatterns2\DesignPatterns2\obj\Debug\DesignPatterns2.csprojAssemblyReference.cache
+C:\Users\stag005\estagiogithub\estagio\T02\DesignPatterns\DesignPatterns2\DesignPatterns2\obj\Debug\DesignPatterns2.csproj.CoreCompileInputs.cache
+C:\Users\stag005\estagiogithub\estagio\T02\DesignPatterns\DesignPatterns2\DesignPatterns2\obj\Debug\DesignPatterns2.exe
+C:\Users\stag005\estagiogithub\estagio\T02\DesignPatterns\DesignPatterns2\DesignPatterns2\obj\Debug\DesignPatterns2.pdb

@@ -1,0 +1,6 @@
+C:\Users\stag005\estagiogithub\estagio\T02\C# Reflection\ByteBank.Portal\ByteBank.Source\bin\Debug\ByteBank.Source.dll
+C:\Users\stag005\estagiogithub\estagio\T02\C# Reflection\ByteBank.Portal\ByteBank.Source\bin\Debug\ByteBank.Source.pdb
+C:\Users\stag005\estagiogithub\estagio\T02\C# Reflection\ByteBank.Portal\ByteBank.Source\obj\Debug\ByteBank.Service.csprojAssemblyReference.cache
+C:\Users\stag005\estagiogithub\estagio\T02\C# Reflection\ByteBank.Portal\ByteBank.Source\obj\Debug\ByteBank.Service.csproj.CoreCompileInputs.cache
+C:\Users\stag005\estagiogithub\estagio\T02\C# Reflection\ByteBank.Portal\ByteBank.Source\obj\Debug\ByteBank.Source.dll
+C:\Users\stag005\estagiogithub\estagio\T02\C# Reflection\ByteBank.Portal\ByteBank.Source\obj\Debug\ByteBank.Source.pdb

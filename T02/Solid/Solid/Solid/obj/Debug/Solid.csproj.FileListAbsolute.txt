@@ -1,0 +1,7 @@
+C:\Users\stag005\estagiogithub\estagio\T02\Solid\Solid\Solid\bin\Debug\Solid.exe.config
+C:\Users\stag005\estagiogithub\estagio\T02\Solid\Solid\Solid\bin\Debug\Solid.exe
+C:\Users\stag005\estagiogithub\estagio\T02\Solid\Solid\Solid\bin\Debug\Solid.pdb
+C:\Users\stag005\estagiogithub\estagio\T02\Solid\Solid\Solid\obj\Debug\Solid.csprojAssemblyReference.cache
+C:\Users\stag005\estagiogithub\estagio\T02\Solid\Solid\Solid\obj\Debug\Solid.csproj.CoreCompileInputs.cache
+C:\Users\stag005\estagiogithub\estagio\T02\Solid\Solid\Solid\obj\Debug\Solid.exe
+C:\Users\stag005\estagiogithub\estagio\T02\Solid\Solid\Solid\obj\Debug\Solid.pdb
